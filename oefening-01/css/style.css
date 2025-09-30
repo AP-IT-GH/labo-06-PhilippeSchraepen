@@ -1,0 +1,58 @@
+:root {
+  --color-background: #f2f2f2;
+  --color-card: #ffffff;
+  --color-h2: #6c6c6c;
+  --color-img-border: #6f008f;
+
+  --h1-size: 2rem;
+  --h2-size: 1.8rem;
+
+  --shadow-medium: 4px 4px 4px 0px #dddada;
+}
+
+body {
+  font-family: sans-serif;
+
+  background-color: var(--color-background);
+
+  display: grid;
+  min-height: 100dvh;
+  /* align-content: center;
+  justify-content: center; */
+  place-content: center;
+}
+
+img {
+  position: relative;
+  bottom: 85px;
+
+  border: 5px solid var(--color-img-border);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.text {
+  position: relative;
+  bottom: 55px;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: bold;
+  padding-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  color: var(--color-h2);
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  border-radius: 12px;
+  text-align: center;
+  background-color: var(--color-card);
+  width: 400px;
+  padding: 0 2rem 2rem 2rem;
+  box-shadow: var(--shadow-medium);
+}
